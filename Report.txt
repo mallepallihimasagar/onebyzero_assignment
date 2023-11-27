@@ -1,0 +1,16 @@
+Task 1 
+For the Task1 sentiment analysis for 8 different emotions on the dataset provided, i have used a pretrained "bert-base-uncased" and finetuned over the given dataset ( used only 10% of the dataset due to gpu compute limitation from my end) and achived 89.9% accuracy on the testset 
+
+
+Task2
+For the summarization task i have just used a gpt-4 llm to summarize the chat and saved the first 100 conversation summaries to the dir task_2_summaries. I have used langchain and pydantic for constructing the dynamic prompts and parsing the llm response to a model object
+
+
+Task 3
+
+The approach for this task is to build a QA system which takes the relevant context from the db (chroma vector db here) and answers according to the user query
+
+I have used langchain, chroma vector db ( to get the relevant context from the conversation based on user query) to build the qa system.
+
+
+Note : The trained model for the Task1 and db has not been included in the zip file due to size contraints, please let me if they are required for the evaluation of the assesment.
